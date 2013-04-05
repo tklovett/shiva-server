@@ -26,3 +26,11 @@ CORS_ENABLED = False
 # An specific domain: 'google.com'
 # A tuple of strings to allow multiple domains: ('google.com', 'napster.com')
 CORS_ALLOWED_ORIGINS = '*'
+
+# Shiva2Shiva
+NEIGHBOURS = (
+    {
+        'host': '127.0.0.1',
+        'key': '',
+    },
+)
