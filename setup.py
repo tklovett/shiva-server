@@ -25,6 +25,7 @@ setup(
     packages=find_packages('.'),
     install_requires=[
         'docopt==0.6.1',
+        'dropbox==1.4',
         'Flask-Restful==0.1.2',
         'Flask-SQLAlchemy==0.16',
         'Flask==0.9',
