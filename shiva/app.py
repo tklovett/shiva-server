@@ -10,8 +10,9 @@ from shiva.models import db
 
 app = Flask(__name__)
 app.config.from_object(Configurator())
-db.app = app
-db.init_app(app)
+BACKENDS = app.config.get('BACKENDS', [])
+for backend in BACKENDS:
+    backend.configure(app)
 
 # RESTful API
 api = Api(app)
